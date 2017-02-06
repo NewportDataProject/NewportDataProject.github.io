@@ -1,3 +1,61 @@
-h1 {
-	text-align: left;
+.general-settings {
+    font-family: Arial;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+/* Banner settings*/
+.top-content {
+   background-color: navy;
+    color: red;
+    font-size: 180%;
+}
+
+#index-top {
+    /*border: 100px navy;*/
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#index-banner-text {
+    /*padding: 10%;*/
+    /*position: relative;*/
+}
+
+
+/* Body settings*/
+.body-container{
+
+}
+
+.body-content {
+    max-width: 720px;
+    margin: auto;
+
+}
+
+/* Content settings*/
+p.about-card {
+
+}
+
+#bridge {
+    width: 100%;
+    height: auto;
+}
+
+/*Link button settings*/
+.link-button {
+    background-color: red;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2%;
+}
+
+.link-button:hover {
+    background-color: darkred;
 }
