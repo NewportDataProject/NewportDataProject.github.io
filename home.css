@@ -1,0 +1,100 @@
+body {
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    margin: 0;
+}
+
+.major-section {
+    min-height: 100vh;
+    height: 100vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+#mission {
+    background-image: url("static/img/NB-center-span-north-half.jpg");
+    background-position: center;
+}
+
+#mission h1 {
+    background-color: indianred;
+}
+
+#vision  {
+    background-image: url("static/img/Newport-Bridge-general-view.jpg");
+    background-position: center;
+}
+
+#vision h1 {
+    background-color: seagreen;
+}
+
+#plan {
+    background-image: url("static/img/Chateau-sur-Mer_lightened_blue.png");
+    background-position: 60% 70%;
+    background-size: 2600px;
+}
+
+#plan h1 {
+    background-color: purple;
+}
+
+.section-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+#title-block {
+    text-align: center;
+    min-height: 100vh;
+    background-color: darkcyan;
+
+}
+
+#title-text {
+    font-size: 4em;
+    padding-top: 20vh;
+    margin-top:0;
+    color: white;
+}
+
+.section-content {
+    text-align: center;
+    background-color: rgba(255,255,255,.9);
+    max-width: 720px;
+    width: 60%;
+    margin: auto;
+    border-radius: 3px;
+    margin-top: 20vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+i {
+    border: solid orangered;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+#arrow {
+    margin-top: 4%;
+    text-align: center;
+}
