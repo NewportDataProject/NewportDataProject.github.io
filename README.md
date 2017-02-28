@@ -29,12 +29,22 @@ some idea of what we are about, some description of the project's vision,
 and info on how people can get involved if they want to.  We also should
 try to convince them that they do want to get involved!
 
-### Home  
-_Fill in the blank_
-### About  
-We are a grassroots network of people on Aquidneck Island and elsewhere,
-with the vision of exploring and improving our communities by
+
+#### The Mission
+Shared projects bring the community together. The goal of the Newport
+Data Project is to bring members of the community together to learn,
+share, and create.
+#### The Vision
+* Access
+* Advocacy
+* Insight
+* Tools
+
+#### The Plan
+* Events
+* Projects
+* Partners
+
 ### Get involved  
-What can you do to help?
-*
+The project needs participants with different skills and backgrounds.
 
