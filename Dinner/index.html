@@ -2,21 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="../static/css/main.css"/>
-    <link type="text/css" rel="stylesheet" href="dinner.css"/>
+    <link type="text/css" rel="stylesheet" href="../home.css">
+    <link type="text/css" rel="stylesheet" href="dinner.css">
     <title>Dinner and a Dataset</title>
+
+
 </head>
 <body>
-<div class="banner-container"><img id="banner" src="../static/img/NDP%20banner%20v0.1.png"></div>
+<div id="data-title-block">
+    <h1>Dinner Data</h1>
+</div>
 
-<div class="content">
-    <h1>Dinner and a Dataset</h1>
-    <p></p>
-    <ul>
-        <li>Pick a recipe</li>
-        <li>Learn a little about your food</li>
-        <li>Join everyone and build a meal and a dataset!</li>
-    </ul>
+<div class="major-section" id="data-visualizations">
+<div class="section-content">
+    <div class="data-button"><a href="https://www.google.com/fusiontables/DataSource?docid=1wYw7q-vOecqSGKMBPzQ0XdSSmFJYuPKfvpT0sdGI">Fusion Table</a>
+    <a href="https://docs.google.com/spreadsheets/d/1jjLJKg1JXH6wb_S742brrAZTlGguuzY65Qhh9OBFK_Y/edit?usp=sharing">Google Sheet</a>
+    </div>
+    <div class="data-vis-container">
+        <h3>How much was organic?</h3>
+    <iframe width="598" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1FCMtXyCX6CFt_wO3gD2a5xpoj6iyxJvVdqGaU6stqq4/pubchart?oid=393004911&amp;format=interactive"></iframe>
+    </div>
+    <div class="data-vis-container">
+        <h3>Where were ingredients from?</h3>
+        <iframe width="500" height="300" scrolling="no" frameborder="no"
+            src="https://fusiontables.google.com/embedviz?q=select+col2+from+17rY9OoRBt1URTRi98nIN8RZP3B_L98xoFpwL18nr&amp;viz=MAP&amp;h=false&amp;lat=33.40901512303363&amp;lng=-81.0445712890625&amp;t=1&amp;z=4&amp;l=col2&amp;y=2&amp;tmplt=2&amp;hml=ONE_COL_LAT_LNG"></iframe>
+    </div>
+    <div class="data-vis-container">
+        <h3>How was the meal connected?</h3>
+        <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=GRAPH&amp;gc=true&amp;gd=false&amp;sdb=1&amp;rmax=100000&amp;uiversion=2&amp;q=select+col1%3E%3E0%2C+col0%3E%3E0+from+1wYw7q-vOecqSGKMBPzQ0XdSSmFJYuPKfvpT0sdGI&amp;qrs=+where+col1%3E%3E0+%3E%3D+&amp;qre=+and+col1%3E%3E0+%3C%3D+&amp;qe=&amp;state=%7B%22ps%22%3A%221_j_-31_-g_d_c_2_u_2v_16_0_21_-1o_7_-1x_17_b_-1f_5_i_1l_u_a_-2k_j_1_17_-u_10_1h_1o_l_-3t_-v_4_1i_-27_c_-1g_1s_3_2l_-28_e_i_s_f_-3_p_g_-7_-h_h_c_-p_8_-20_1y_11_1f_2c_k_-3l_-15_5_22_-2f_m_-2v_-1b_n_-39_-1b_o_-3x_-i_p_-2h_-14_q_-3a_d_r_-3v_-5_s_-28_-p_t_-3o_6_2_2o_-19_v_38_i_w_3d_1s_x_3m_w_y_3n_1d_z_2u_1x_6_2t_-1s_9_-2h_1p_%22%2C%22cx%22%3A41.922735385055674%2C%22cy%22%3A-10.598012254858796%2C%22sw%22%3A667.4537581514481%2C%22sh%22%3A296.0926704900703%2C%22z%22%3A0.9970924762574072%7D&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=500&amp;height=300"></iframe>
+    </div>
+</div>
 </div>
 </body>
 </html>
