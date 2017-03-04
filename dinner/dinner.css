@@ -18,10 +18,14 @@ body {
     border-radius: 3px;
     border: solid red;
     padding: 5px;
-    margin: 10px;
+    margin: 01px;
     background-color: red;
 }
 
 .data-button a:hover {
     background-color: lightcoral;
+}
+
+.data-button{
+    margin: 5px;
 }
