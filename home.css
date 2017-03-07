@@ -242,3 +242,20 @@ orangered = #FF4500
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
+
+#privacy-link {
+    background-color: red;
+    position: absolute;
+}
+
+#privacy-link:hover{
+    background-color: orangered;
+}
+
+.data-vis-container {
+    padding: 20px;
+}
+
+.data-vis-container h3 {
+    padding: 5px;
+}
