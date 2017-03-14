@@ -19,6 +19,21 @@
     padding: 10px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    color: black;
+}
+
+#mcModal p {
+    color: black;
+}
+
+#mc_embed_signup_scroll h2 {
+    color: black;
+    font-style: normal;
+}
+
+#mc_embed_signup {
+    max-width: 80%;
+    margin: auto 10px;
 }
 
 /* The Close Button */

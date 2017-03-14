@@ -70,6 +70,10 @@ body {
     font-style: italic;
 }
 
+#title-block p {
+    color: white;
+}
+
 #title-text {
     font-size: 4em;
     padding-top: 20vh;
@@ -262,4 +266,10 @@ orangered = #FF4500
 
 .data-vis-container h3 {
     padding: 5px;
+}
+
+.footer {
+    align-content: center;
+    position: absolute;
+    vertical-align: bottom;
 }

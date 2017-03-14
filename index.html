@@ -34,7 +34,14 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Modal</p>
+            <div>
+                <h1>Get plugged in</h1>
+            </div>
+            <div class="horizontal-divider"></div>
+            <div style="max-width: 60%; margin: 20px auto;">
+                <em>The Newport Data Project is built by community members like you - it is what you make it. Join a
+                    community working to help spark innovative ideas and get them off the ground.</em>
+            </div>
             <!-- Begin MailChimp Signup Form -->
 
             <div id="mc_embed_signup">
@@ -58,7 +65,7 @@
                             <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
                         </div>
                         <div class="mc-field-group input-group">
-                            <strong>I want to join on: </strong>
+                            <strong>Connect me on: </strong>
                             <ul>
                                 <li><input type="checkbox" value="1" name="group[12325][1]"
                                            id="mce-group[12325]-12325-0"><label
@@ -77,7 +84,7 @@
                                                                                                   name="b_304eda23d49210e1749cd6439_aba06f856f"
                                                                                                   tabindex="-1"
                                                                                                   value=""></div>
-                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                        <div class="clear"><input type="submit" value="Go" name="subscribe"
                                                   id="mc-embedded-subscribe" class="button"></div>
                     </div>
                 </form>
@@ -86,25 +93,8 @@
 
     </div>
 
-
-    <!-- Info Modal -->
-    <div id="infoModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
-        </div>
-
-    </div>
-
-    <div>
-        <p>Help spark innovation and get ideas off the ground.</p>
-    </div>
-
     <!-- Trigger/Open Mailchimp Modal -->
-    <div class="jump"><a href="javascript:void(0)" id="infoBtn">More Info</a></div>
-    <div class="jump"><a href="javascript:void(0)" id="mcBtn">Sign Up</a></div>
+    <div class="jump"><a href="javascript:void(0)" id="mcBtn">Start</a></div>
 
     <!--<div id="contact"><a href="mailto:hello@newportdataproject.org">Contact</a> <a-->
     <!--href="https://newportdataproject.slack.com">Slack</a> <a-->
@@ -121,39 +111,28 @@
 <script>
     // Get the modal
     var mcModal = document.getElementById('mcModal');
-    var infoModal = document.getElementById('infoModal');
 
     // Get the button that opens the modal
     var mcBtn = document.getElementById("mcBtn");
-    var infoBtn = document.getElementById("infoBtn");
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close");
+    var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks on the button, open the modal
     mcBtn.onclick = function () {
         mcModal.style.display = "block";
     }
 
-    infoBtn.onclick = function () {
-        infoModal.style.display = "block";
-    }
 
     // When the user clicks on <span> (x), close the modal
-    span[0].onclick = function () {
+    span.onclick = function () {
         mcModal.style.display = "none";
-    }
-    span[1].onclick = function () {
-        infoModal.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
         if (event.target == mcModal) {
             mcModal.style.display = "none";
-        }
-        if (event.target == infoModal) {
-            infoModal.style.display = "none";
         }
     }
 </script>
