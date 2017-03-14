@@ -3,44 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="home.css"/>
-    <title>Newport Data Project</title>
+    <link rel="stylesheet" type="text/css" href="modal.css">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+        }
 
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <title>Newport Data Project</title>
 
 </head>
 
-<!--/*When the page is done, get rid of the onload function call.*/-->
-<body onload="openSidePop()">
+<!--/*When the page is done, get rid of the onload="openSidePop()" function call.*/-->
+<body>
 
 <div class="major-section" id="title-block">
 
     <h1 id="title-text">Newport Data Project</h1>
     <h2>an engine for grassroots innovation</h2>
     <div class="horizontal-divider"></div>
-    <div class="jump"><a href="mailto:hello@newportdataproject.org">Contact</a> <a href="https://newportdataproject.slack.com">Slack</a> <a href="https://github.com/NewportDataProject">GitHub</a></div>
+
+    <!-- Mailchimp Modal -->
+    <div id="mcModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Modal</p>
+            <!-- Begin MailChimp Signup Form -->
+
+            <div id="mc_embed_signup">
+                <form action="//jamiebova.us13.list-manage.com/subscribe/post?u=304eda23d49210e1749cd6439&amp;id=aba06f856f"
+                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                      target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <h2>Subscribe to our mailing list</h2>
+                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                            </label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">First Name </label>
+                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-LNAME">Last Name </label>
+                            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                        </div>
+                        <div class="mc-field-group input-group">
+                            <strong>I want to join on: </strong>
+                            <ul>
+                                <li><input type="checkbox" value="1" name="group[12325][1]"
+                                           id="mce-group[12325]-12325-0"><label
+                                        for="mce-group[12325]-12325-0">Slack</label></li>
+                                <li><input type="checkbox" value="2" name="group[12325][2]"
+                                           id="mce-group[12325]-12325-1"><label
+                                        for="mce-group[12325]-12325-1">Github</label></li>
+                            </ul>
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                                  name="b_304eda23d49210e1749cd6439_aba06f856f"
+                                                                                                  tabindex="-1"
+                                                                                                  value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                                  id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Info Modal -->
+    <div id="infoModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
+
+    <div>
+        <p>Help spark innovation and get ideas off the ground.</p>
+    </div>
+
+    <!-- Trigger/Open Mailchimp Modal -->
+    <div class="jump"><a href="javascript:void(0)" id="infoBtn">More Info</a></div>
+    <div class="jump"><a href="javascript:void(0)" id="mcBtn">Sign Up</a></div>
+
+    <!--<div id="contact"><a href="mailto:hello@newportdataproject.org">Contact</a> <a-->
+    <!--href="https://newportdataproject.slack.com">Slack</a> <a-->
+    <!--href="https://github.com/NewportDataProject">GitHub</a></div>-->
 
 
     <!--<div id="privacy-link">-->
-        <!--<a href="javascript:void(0)" onclick="openBottomPop()">Privacy Policy</a>-->
+    <!--<a href="javascript:void(0)" onclick="openBottomPop()">Privacy Policy</a>-->
     <!--</div>-->
 
 </div>
 
+<!--Modal script-->
+<script>
+    // Get the modal
+    var mcModal = document.getElementById('mcModal');
+    var infoModal = document.getElementById('infoModal');
+
+    // Get the button that opens the modal
+    var mcBtn = document.getElementById("mcBtn");
+    var infoBtn = document.getElementById("infoBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close");
+
+    // When the user clicks on the button, open the modal
+    mcBtn.onclick = function () {
+        mcModal.style.display = "block";
+    }
+
+    infoBtn.onclick = function () {
+        infoModal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span[0].onclick = function () {
+        mcModal.style.display = "none";
+    }
+    span[1].onclick = function () {
+        infoModal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == mcModal) {
+            mcModal.style.display = "none";
+        }
+        if (event.target == infoModal) {
+            infoModal.style.display = "none";
+        }
+    }
+</script>
 
 
 <!--Privacy Policy-->
 <!--<div id="privacy-popup" class="overlay">-->
-    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeBottomPop()">&times;</a>-->
-    <!--<div class="overlay-content">-->
-        <!--<h1>Privacy Policy</h1>-->
-        <!--<p>This website uses Google Analytics to monitor traffic. Google Analytics is a web analysis service provided-->
-            <!--by Google. Google utilizes the data collected to track and examine the use of newportdataproject.org,-->
-            <!--to prepare reports on its activities and share them with other Google services.</p>-->
-        <!--<p>Google may use the data collected to contextualize and personalize the ads of its own advertising network.-->
-                <!--Personal data collected: Cookie and Usage Data. Place of processing: USA.-->
-        <!--</p>-->
-        <!--<p>The data will be used to </p>-->
-        <!--<p><a href="javascript:void(0)" onclick="closeBottomPop()">Got it.</a>-->
-    <!--</div>-->
+<!--<a href="javascript:void(0)" class="closebtn" onclick="closeBottomPop()">&times;</a>-->
+<!--<div class="overlay-content">-->
+<!--<h1>Privacy Policy</h1>-->
+<!--<p>This website uses Google Analytics to monitor traffic. Google Analytics is a web analysis service provided-->
+<!--by Google. Google utilizes the data collected to track and examine the use of newportdataproject.org,-->
+<!--to prepare reports on its activities and share them with other Google services.</p>-->
+<!--<p>Google may use the data collected to contextualize and personalize the ads of its own advertising network.-->
+<!--Personal data collected: Cookie and Usage Data. Place of processing: USA.-->
+<!--</p>-->
+<!--<p>The data will be used to </p>-->
+<!--<p><a href="javascript:void(0)" onclick="closeBottomPop()">Got it.</a>-->
+<!--</div>-->
 <!--</div>-->
 
 
@@ -53,21 +185,22 @@
             links. No matter what, things are going to be changing. But don't worry - since this is a community project,
             you can help!</em></p>
         <p><a href="javascript:void(0)" onclick="closeSidePop()">That's ok, show me what you've got!</a>
-        <a href="https://github.com/NewportDataProject/NewportDataProject.github.io" onclick="closeSidePop()">I want to help!</a></p>
+            <a href="https://github.com/NewportDataProject/NewportDataProject.github.io" onclick="closeSidePop()">I want
+                to help!</a></p>
     </div>
 </div>
 
 <script>
     function openSidePop() {
-        document.getElementById("load-popup").style.width="100%";
+        document.getElementById("load-popup").style.width = "100%";
     }
 
     function closeSidePop() {
-        document.getElementById("load-popup").style.width="0%";
+        document.getElementById("load-popup").style.width = "0%";
     }
 
     function openBottomPop() {
-        document.getElementById("privacy-popup").style.width="100%";
+        document.getElementById("privacy-popup").style.width = "100%";
     }
 
     function closeBottomPop() {

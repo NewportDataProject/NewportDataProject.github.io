@@ -162,6 +162,10 @@ i:hover {
     color: white;
 }
 
+.jump #contact {
+    font-size: .3em;
+}
+
 #plan .jump a {
     color: red;
     border: solid red;
