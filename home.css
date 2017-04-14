@@ -1,67 +1,23 @@
 body {
     font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 .major-section {
-    min-height: 100vh;
+    min-height: 95vh;
     height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    border-radius: 0;
 }
 
-#mission {
-    background-image: url("static/img/NB-center-span-north-half.jpg");
-    background-position: center;
+.sub-section {
+    min-height: 95vh;
+    height: auto;
 }
 
-#mission h1 {
-    background-color: indianred;
-}
-
-#vision  {
-    background-image: url("static/img/Newport-Bridge-general-view.jpg");
-    background-position: center;
-}
-
-#vision h1 {
-    background-color: seagreen;
-}
-
-#plan {
-    background-image: url("static/img/Chateau-sur-Mer_lightened_blue.png");
-    background-position: 60% 70%;
-    background-size: 2600px;
-}
-
-#plan h1 {
-    background-color: purple;
-}
-
-#get-involved {
-
-}
-
-#get-involved h1{
-    background-color: darkcyan;
-}
-
-.section-header {
-    text-align: center;
-    font-weight: bold;
-    font-size: 3em;
-    color: white;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    margin-top: 0;
-}
 
 #title-block {
     text-align: center;
-    min-height: 100vh;
     background-color: darkcyan;
-
 }
 
 #title-block h2 {
@@ -78,7 +34,50 @@ body {
     font-size: 4em;
     padding-top: 20vh;
     margin-top:0;
+    margin-bottom: 40px;
     color: white;
+}
+
+#info {
+    background-color: gold;
+    color: black;
+    text-align: center;
+    vertical-align: top;
+}
+
+#join {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.headcard h1 {
+    padding: 5px;
+}
+
+.headcard {
+    max-width: 400px;
+    padding: 2px;
+    margin: auto;
+    box-shadow: 1px 1px 3px #888;
+}
+
+#info .headcard {
+        background-color: orangered;
+        color:white;
+}
+
+#join .headcard {
+    background-color: orangered;
+    color: white;
+}
+#title-block .major-section h1 {
+    margin: 0;
+}
+
+.spacer {
+    padding: 10px;
 }
 
 .section-content {
@@ -166,25 +165,25 @@ i:hover {
     color: white;
 }
 
-.jump #contact {
-    font-size: .3em;
-}
 
-#plan .jump a {
-    color: red;
-    border: solid red;
-}
 
-#plan .jump a:hover {
-    background-color: yellow;
-}
-
-.horizontal-divider {
+.horizontal-divider-orange {
     max-height: 5px;
     height: 5px;
     max-width: 720px;
     width: 80%;
     background-color: orangered;
+    text-align: center;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.horizontal-divider-cyan {
+    max-height: 5px;
+    height: 5px;
+    max-width: 720px;
+    width: 80%;
+    background-color: darkcyan;
     text-align: center;
     margin: auto;
     margin-top: 3px;
@@ -269,7 +268,27 @@ orangered = #FF4500
 }
 
 .footer {
-    align-content: center;
-    position: absolute;
-    vertical-align: bottom;
+    font-size: 1.2em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: darkcyan;
+    border-top: 3px solid orangered;
+}
+
+.footer-link {
+
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 10px;
+}
+
+.footer-link a:hover {
+    color: lightcyan;
 }
