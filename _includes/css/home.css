@@ -1,0 +1,294 @@
+body {
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.major-section {
+    min-height: 95vh;
+    height: auto;
+}
+
+.sub-section {
+    min-height: 95vh;
+    height: auto;
+}
+
+
+#title-block {
+    text-align: center;
+    background-color: darkcyan;
+}
+
+#title-block h2 {
+    color: lightcyan;
+    margin-bottom: 3%;
+    font-style: italic;
+}
+
+#title-block p {
+    color: white;
+}
+
+#title-text {
+    font-size: 4em;
+    padding-top: 20vh;
+    margin-top:0;
+    margin-bottom: 40px;
+    color: white;
+}
+
+#info {
+    background-color: gold;
+    color: black;
+    text-align: center;
+    vertical-align: top;
+}
+
+#join {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.headcard h1 {
+    padding: 5px;
+}
+
+.headcard {
+    max-width: 400px;
+    padding: 2px;
+    margin: auto;
+    box-shadow: 1px 1px 3px #888;
+}
+
+#info .headcard {
+        background-color: orangered;
+        color:white;
+}
+
+#join .headcard {
+    background-color: orangered;
+    color: white;
+}
+#title-block .major-section h1 {
+    margin: 0;
+}
+
+.spacer {
+    padding: 10px;
+}
+
+.section-content {
+    text-align: center;
+    background-color: rgba(255,255,255,1);
+    max-width: 720px;
+    width: 60%;
+    margin: auto;
+    border-radius: 3px;
+    margin-top: 20vh;
+    padding: 15px;
+}
+
+.section-content h2 {
+    color: orangered;
+    font-style: italic;
+}
+
+.section-content h3 {
+    text-align: left;
+    max-width: 70%;
+    margin: auto;
+}
+
+.section-content p {
+    text-align: left;
+    max-width: 60%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+i {
+    border: solid orangered;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+#arrow {
+    margin-top: 4%;
+    text-align: center;
+}
+
+i:hover {
+    border-color: blue;
+}
+
+.jump {
+    max-width: 720px;
+    margin:auto;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.jump a {
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    border-radius: 3px;
+    border: solid white;
+    padding: 5px;
+    margin: 10px;
+}
+
+.jump a:hover {
+    background-color: cyan;
+}
+
+.jump a:visited {
+    color: white;
+}
+
+
+
+.horizontal-divider-orange {
+    max-height: 5px;
+    height: 5px;
+    max-width: 720px;
+    width: 80%;
+    background-color: orangered;
+    text-align: center;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.horizontal-divider-cyan {
+    max-height: 5px;
+    height: 5px;
+    max-width: 720px;
+    width: 80%;
+    background-color: darkcyan;
+    text-align: center;
+    margin: auto;
+    margin-top: 3px;
+}
+
+#title-block .jump {
+    margin-top: 5%;
+}
+
+/*darkcyan = #008B8B
+orangered = #FF4500
+*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #818181;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.overlay-content p {
+    max-width: 720px;
+    margin: auto;
+    display: block;
+    margin-bottom: 5%;
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 10px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: darkorange;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+#privacy-link {
+    background-color: red;
+    position: absolute;
+}
+
+#privacy-link:hover{
+    background-color: orangered;
+}
+
+.data-vis-container {
+    padding: 20px;
+}
+
+.data-vis-container h3 {
+    padding: 5px;
+}
+
+.footer {
+    font-size: 1.2em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: darkcyan;
+    border-top: 3px solid orangered;
+}
+
+.footer-link {
+
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 10px;
+}
+
+.footer-link a:hover {
+    color: lightcyan;
+}

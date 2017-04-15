@@ -1,0 +1,13 @@
+# Site Settings
+title: Newport Data Project
+email: hello@newportdataproject.org
+description: an engine for grassroots innovation
+baseurl: ""
+url: "http://newportdataproject.org"
+twitter_username: NewportData
+github_username: NewportDataProject
+
+# Build Settings
+markdown: kramdown
+
+# Color Settings
