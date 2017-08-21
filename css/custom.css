@@ -1,0 +1,52 @@
+body {
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    background: black;
+}
+
+@media screen-sm {
+    .title-text {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen-xs {
+    .title-text {
+        font-size: 2.5rem;
+    }
+}
+
+.card-header, .card-footer {
+    background-color:lightcyan;
+}
+
+.title-text {
+    font-size: 4rem;
+    color:#ffffff;
+}
+
+/*Shapes and decorations*/
+.horizontal-divider {
+    max-height: 5px;
+    height: 5px;
+    max-width: 720px;
+    width: 80%;
+    background-color: orangered;
+    text-align: center;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.bg-landsat {
+    background-image: url("../landsat.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.bg-street-graph {
+    background-color: white;
+    background-image: url("../betweenness-types.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

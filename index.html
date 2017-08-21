@@ -2,80 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="home.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Newport Data Project</title>
-
-
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/plain.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
-<!--/*When the page is done, get rid of the onload function call.*/-->
-<body onload="openSidePop()">
+<!--This is basic styling to get meaningful information up on the web. Future updates should keep it streamlined and
+simple, but the site could use some more interesting visuals.-->
 
-<div class="major-section" id="title-block">
+<body>
+<div class="container-fluid">
+    <div class="p-3 mt-2" style="background-color: #ebebeb">
+        <h1 class="display-3 font-weight-bold">The Newport Data Project</h1>
+        <h3>
+            <small class="text-muted">an engine for grassroots innovation</small>
+        </h3>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="p-2 m-2">
+            <h2>Open Data</h2>
+            <p>The Newport Data Project is based on the idea that everyone has something to contribute if they have
+                access to the right tools. Open datasets are an important part of that idea. The Newport Data Project
+                advocates opening datasets to the public, and seeks out existing open datasets from local, state,
+                national, and international sources. You can explore these datasets on our <a
+                        href="http://portal.newportdataproject.org">Data Portal</a>.</p>
+        </div>
 
-    <h1 id="title-text">Newport Data Project</h1>
-    <h2>an engine for grassroots innovation</h2>
-    <div class="horizontal-divider"></div>
-    <div class="jump"><a href="mailto:hello@newportdataproject.org">Contact</a> <a href="https://newportdataproject.slack.com">Slack</a> <a href="https://github.com/NewportDataProject">GitHub</a></div>
+        <div class="p-2 m-2">
+            <h2>Data Analysis</h2>
+            <p>Data provides a unique way of looking at issues. We look at challenges and opportunities in our
+                communities using data-driven methods to provide fact-based options to community members and local
+                leaders. We post
+                our code on <a href="https://github.com/newportdataproject">GitHub</a>.</p>
+        </div>
 
+        <div class="p-2 m-2">
+            <h2>Community Innovation</h2>
+            <p>The Newport Data Project is made up of community members interested in exploring new approaches to
+                addressing local issues. The project’s goal is to foster conversations about innovation in the community
+                and provide the collective resources to follow through. Keep reading to see how you can join in the conversation.</p>
+        </div>
 
-    <!--<div id="privacy-link">-->
-        <!--<a href="javascript:void(0)" onclick="openBottomPop()">Privacy Policy</a>-->
-    <!--</div>-->
-
-</div>
-
-
-
-<!--Privacy Policy-->
-<!--<div id="privacy-popup" class="overlay">-->
-    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeBottomPop()">&times;</a>-->
-    <!--<div class="overlay-content">-->
-        <!--<h1>Privacy Policy</h1>-->
-        <!--<p>This website uses Google Analytics to monitor traffic. Google Analytics is a web analysis service provided-->
-            <!--by Google. Google utilizes the data collected to track and examine the use of newportdataproject.org,-->
-            <!--to prepare reports on its activities and share them with other Google services.</p>-->
-        <!--<p>Google may use the data collected to contextualize and personalize the ads of its own advertising network.-->
-                <!--Personal data collected: Cookie and Usage Data. Place of processing: USA.-->
-        <!--</p>-->
-        <!--<p>The data will be used to </p>-->
-        <!--<p><a href="javascript:void(0)" onclick="closeBottomPop()">Got it.</a>-->
-    <!--</div>-->
-<!--</div>-->
-
-
-<!--/*The under construction popup code*/-->
-<div id="load-popup" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeSidePop()">&times;</a>
-    <div class="overlay-content">
-        <h1>Hi There!</h1>
-        <p><em>This website isn't quite finished yet. There might be some missing content, ugly formatting, and broken
-            links. No matter what, things are going to be changing. But don't worry - since this is a community project,
-            you can help!</em></p>
-        <p><a href="javascript:void(0)" onclick="closeSidePop()">That's ok, show me what you've got!</a>
-        <a href="https://github.com/NewportDataProject/NewportDataProject.github.io" onclick="closeSidePop()">I want to help!</a></p>
+        <div class="p-2 m-2">
+            <h2>Get Involved</h2>
+            <p>If the Newport Data Project interests you, please <a href="http://eepurl.com/cJgdfD">join the mailing list</a>. We'll keep you
+                in the loop (<em>without spamming you!</em>), and we'll also send you an invite to the <a href="https://newportdataproject.slack.com">Slack
+                    channel</a> where most of the conversation takes place.</p>
+            <p>Do you have questions, ideas, or datasets? We'd love to hear from you! Send us an email at: <a
+                    href="mailto:hello@newportdataproject.org">hello@newportdataproject.org</a>. </p>
+        </div>
+    </div>
+    <hr>
+    <div class="fixed-bottom text-center">
+        <p><a href="https://creativecommons.org/licenses/by-nd/4.0/"><small>CC BY-ND 4.0</small></a></p>
     </div>
 </div>
-
-<script>
-    function openSidePop() {
-        document.getElementById("load-popup").style.width="100%";
-    }
-
-    function closeSidePop() {
-        document.getElementById("load-popup").style.width="0%";
-    }
-
-    function openBottomPop() {
-        document.getElementById("privacy-popup").style.width="100%";
-    }
-
-    function closeBottomPop() {
-        document.getElementById("privacy-popup").style.width = "0%";
-    }
-
-</script>
-
-
 </body>
 </html>
