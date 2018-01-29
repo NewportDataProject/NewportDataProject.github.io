@@ -1,10 +1,69 @@
----
-layout: default
-role: index
-title: Newport Data Project Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newport Data Project</title>
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/plain.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+</head>
 
-{% include header.html %}
-{% include about.html %}
-{% include join.html %}
-{% include footer.html %}
+<!--This is basic styling to get meaningful information up on the web. Future updates should keep it streamlined and
+simple, but the site could use some more interesting visuals.-->
+
+<body>
+<div class="container-fluid">
+    <div class="p-3 mt-2" style="background-color: #ebebeb">
+        <h1 class="display-3 font-weight-bold">The Newport Data Project</h1>
+        <h3>
+            <small class="text-muted">an engine for grassroots innovation</small>
+        </h3>
+    </div>
+    <hr>
+    <div class="container">
+
+      <div class="p-2 m-2">
+          <h2>Community Innovation</h2>
+          <p>The Newport Data Project is made up of community members interested in exploring new approaches to
+              addressing local issues. The Project’s goal is to foster conversations about innovation in the community
+              and provide the collective resources to follow through.</p>
+      </div>
+
+        <div class="p-2 m-2">
+            <h2>Open Data</h2>
+            <p>The Newport Data Project is based on the idea that everyone has something to contribute if they have
+                access to the right tools. Open datasets are an important part of that idea. The Newport Data Project
+                advocates opening datasets to the public, and seeks out existing open datasets from local, state,
+                national, and international sources. You can explore these datasets on our <a
+                        href="http://portal.newportdataproject.org">Data Portal</a>.</p>
+        </div>
+
+        <div class="p-2 m-2">
+            <h2>Data Analysis</h2>
+            <p>Data provides a unique way of looking at issues. We look at challenges and opportunities in our
+                communities using data-driven methods to provide fact-based options to community members and local
+                leaders. We post
+                our code on <a href="https://github.com/newportdataproject">GitHub</a>.</p>
+        </div>
+
+
+        <div class="p-2 m-2">
+            <h2>Get Involved</h2>
+            <p>If the Newport Data Project interests you, please <a href="http://eepurl.com/cJgdfD">join the mailing list</a>. We'll keep you
+                in the loop (<em>without spamming you!</em>), and we'll also send you an invite to the <a href="https://newportdataproject.slack.com">Slack
+                    channel</a> where most of the conversation takes place.</p>
+            <p>The <a href="http://www.newportdataproject.org/docs/Introduction.html">Member Introduction</a> has more information on how the Project works.</p>
+            <p>Do you have questions, ideas, or datasets? We'd love to hear from you! Send us an email at: <a
+                    href="mailto:hello@newportdataproject.org">hello@newportdataproject.org</a>. </p>
+        </div>
+    </div>
+    <hr>
+    <div class="fixed-bottom text-center">
+        <p><a href="https://creativecommons.org/licenses/by-nd/4.0/"><small>CC BY-ND 4.0</small></a></p>
+    </div>
+</div>
+</body>
+</html>
