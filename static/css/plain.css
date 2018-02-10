@@ -1,0 +1,43 @@
+.cover {
+    background-color:darkcyan;
+    background-image: url("../Newport, RI, USA.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.inner-cover {
+    padding-top: 30vh;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 15%;
+}
+
+.content-section {
+    text-align: center;
+    min-height: 40vh;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section-body {
+    background-color: gold;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-top: -10px;
+    height: 50%;
+}
+
+.section-body p {
+    font-size: 1.5em;
+}
+
+.bg-red {
+    background: red;
+}
